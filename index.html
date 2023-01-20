@@ -1,42 +1,41 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="icon" href="Media/Icons/iconPokeball.png">
+<html lang="en">
 
-    <script defer src="JS/script.js"></script>
-    
-    <title>Pokedex</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="icon" href="Media/Icons/iconPokeball.png">
+
+  <script defer src="JS/script.js"></script>
+
+  <title>Pokedex - Víctor Souza</title>
 </head>
 
 <body>
-    <main>
-        <img src="#" alt="pokemon" class="pokemon__image">
-    
-        <h1 class="pokemon__data">
-          <span class="pokemon__number"></span> -
-          <span class="pokemon__name"></span>
-        </h1>
-    
-        <form class="form">
-          <input
-            type="search"
-            class="input__search"
-            placeholder="Name or Number"
-            required
-          />
-        </form>
-    
-        <div class="buttons">
-          <button class="button btn-prev">Prev &lt;</button>
-          <button class="button btn-next">Next &gt;</button>
-        </div>
-    
-        <img src="Media/pokedexContainer.png" alt="pokedex" class="pokedex">
-      </main>
+  <main>
+    <img src="#" alt="pokemon" class="pokemonGif">
+
+    <div class="pokemonInfo">
+      <span class="pokemonNumber"></span>
+      <span class="pokemonName"></span>
+    </div>
+
+    <form class="form">
+      <input type="search" class="inputSearch" placeholder="Name or Number" required />
+    </form>
+
+    <div class="buttons">
+      <button class="btnPrev">Prev</button>
+      <button class="btnNext">Next</button>
+    </div>
+  </main>
+
+  <a target="_blank" href="https://victorsouza02.github.io/Portfolio/#/" class="credits">
+    By Víctor Souza
+  </a>
 </body>
+
 </html>

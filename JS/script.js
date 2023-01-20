@@ -1,11 +1,11 @@
-const pokemonName = document.querySelector('.pokemon__name');
-const pokemonNumber = document.querySelector('.pokemon__number');
-const pokemonImage = document.querySelector('.pokemon__image');
+const pokemonName = document.querySelector('.pokemonName');
+const pokemonNumber = document.querySelector('.pokemonNumber');
+const pokemonImage = document.querySelector('.pokemonGif');
 
 const form = document.querySelector('.form');
-const input = document.querySelector('.input__search');
-const buttonPrev = document.querySelector('.btn-prev');
-const buttonNext = document.querySelector('.btn-next');
+const input = document.querySelector('.inputSearch');
+const buttonPrev = document.querySelector('.btnPrev');
+const buttonNext = document.querySelector('.btnNext');
 
 let searchPokemon = 1;
 
@@ -20,7 +20,7 @@ const fetchPokemon = async (pokemon) => {
 
 const renderPokemon = async(pokemon) =>{
     pokemonImage.style.display = 'none';
-    pokemonName.innerHTML = 'Carregando...'
+    pokemonName.innerHTML = 'Loading...'
     pokemonNumber.innerHTML = '';
     
 
@@ -37,7 +37,7 @@ const renderPokemon = async(pokemon) =>{
         input.value = ''
     } else {
         pokemonImage.style.display = 'none';
-        pokemonName.innerHTML = 'Não encontrado';
+        pokemonName.innerHTML = 'Not found :(';
         pokemonNumber.innerHTML = '';
     }
 }
