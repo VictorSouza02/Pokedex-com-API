@@ -24,9 +24,12 @@ body {
 }
 
 main {
-    background-image: url(../Media/pokedexContainer.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 
     width: 80%;
     max-width: 330px;
@@ -35,18 +38,31 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.pokemonAndName,
+.formAndBtn {
+    display: flex;
+    flex-direction: column;
     gap: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 .pokemonGif {
     display: none;
-    position: absolute;
-    bottom: 50%;
+    object-fit: contain;
+    width: 150px;
+    object-fit: contain;
+    aspect-ratio: 1/1;
+
+    background-color: rgba(37, 150, 190, 0.2);
+    padding: 15px;
+    border-radius: 8px;
 }
 
 .pokemonInfo {
-    margin-top: 80%;
     font-weight: bold;
 }
 
@@ -61,46 +77,49 @@ main {
 }
 
 .inputSearch {
-    background-color: #e3e3e3;
     outline: none;
     border: 0;
-    border-radius: 7px;
-    padding: 5px;
-    margin-right: 5px;
-    width: 100%;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    padding: 8px;
+    border-radius: 50px;
+    background: #e3e3e3;
+    box-shadow: 20px 20px 60px #c1c1c1,
+        -20px -20px 60px #ffffff;
+    font-weight: bold;
+    color: #2596be;
 }
 
 .buttons {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    gap: 60px;
+    justify-content: space-between;
 }
 
 button {
-    padding: 2px 8px;
-    border-radius: 8px;
+    padding: 4px 12px;
     border: 0;
     outline: none;
 
     font-weight: bold;
-    background-color: #e3e3e3;
     color: #2596be;
     cursor: pointer;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    border-radius: 50px;
+    background: #e3e3e3;
+    box-shadow: 20px 20px 60px #c1c1c1,
+        -20px -20px 60px #ffffff;
 }
 
 button:hover,
-button:active {
+button:active,
+.credits:hover,
+.credits:active {
     background-color: #cecece;
 }
 
 .credits {
-    position: absolute;
-    bottom: 5px;
-    left: 5px;
-    font-size: small;
     font-weight: bold;
     text-decoration: none;
-    color: #d30a40;
+    padding: 4px 12px;
+    background-color: #e3e3e3;
+    color: #2596be;
+    border-radius: 8px;
 }
